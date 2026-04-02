@@ -15,11 +15,11 @@ function Counter() {
     }
     }
   return (
-    <div className="flex flex-col items-center justify-center py-10">
+    <div className="min-h-screen flex flex-col items-center justify-center py-10 h-screen">
       <p className='text-xl font-bold py-5'>Sudah di Click {count} Kali</p>
       <div className="flex gap-4">
-        <button  className=" border border-solid border-black bg-green-500 cursor-pointer text-white font-bold py-2 px-4 rounded"onClick={handleInc}>Click Increment</button>
-        <button  className="border border-solid border-black bg-red-500 cursor-pointer text-white font-bold py-2 px-4 rounded " onClick={handleDec}>Click Decrement</button>
+        <button  className="  bg-blue-500 cursor-pointer text-white font-bold py-2 px-4 rounded"onClick={handleInc}>Click Increment</button>
+        <button  className="bg-red-500 cursor-pointer text-white font-bold py-2 px-4 rounded " onClick={handleDec}>Click Decrement</button>
       </div>
     </div>
   );

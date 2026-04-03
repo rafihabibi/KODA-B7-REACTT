@@ -1,16 +1,68 @@
-# React + Vite
+# Movie Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Link Deploy
 
-Currently, two official plugins are available:
+[Vercel Movie Project](https://moviespace-project.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## document object model (dom)
 
-## React Compiler
+interface program yang memungkinkan developer melakukan pengubahan pada tampilan, konten hingga struktur website tersebut.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Fungsi DOM
 
-## Expanding the ESLint configuration
+- Melakukan Aksi pada Elemen
+- Menambahkan dan Menghapus Elemen
+- Mengubah Atribut Elemen
+- Memberikan Respon
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Cara kerja DOM
+
+Cara kerjanya adalah memanipulasi sebuah halaman website supaya lebih dinamis dengan cara mengambil, menambahkan, mengubah atau menghapus elemen HTML.
+
+## dom method
+
+- document.getElementById(id)
+- document.getElementsByClassName(name)
+- document.querySelector(query)
+- document.querySelectorAll(query)
+
+## window VS document
+
+### Objek Window :
+
+Objek Window adalah objek global, objek utama yang memberi informasi tentang jendela browser.
+
+### Document:
+
+metode untuk memanipulasi DOM dan berinteraksi dengan konten halaman web.
+
+### contoh window:
+
+![image](./src/assets/image.png)
+
+### contoh Document:
+
+![image](<./src/assets/image%20(1).png>)
+
+## Event Propagation
+
+Proses bagaimana browser menjalankan fungsi ketika terjadi interaksi (misal: klik) pada elemen bersarang.
+
+1. Capturing Phase: Aliran event turun dari elemen terluar ke elemen target.
+2. Target Phase: Event tepat berada pada elemen yang diklik.
+3. Bubbling Phase: Aliran event naik kembali dari elemen target ke elemen terluar (Induk).
+4. Kontrol: Gunakan event.stopPropagation() untuk menghentikan aliran event agar tidak memicu fungsi pada elemen induk.
+
+## Fetch API: GET vs POST
+
+### GET (Mengambil Data):
+
+- Tujuan: Meminta data dari server.
+- Data dikirim melalui parameter URL.
+- Contoh: fetch('/api/users')
+
+### POST (Mengirim Data):
+
+- Tujuan: Mengirim/menyimpan data baru ke server.
+- Data dikirim di dalam "Body".
+- Memerlukan pengaturan method, headers, dan body.

@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-
-
 function PokemonData() {
     const [dataPokemon, setDataPokemon] = useState([]);
     const [searchPokemon, setSearchPokemon] = useState("");

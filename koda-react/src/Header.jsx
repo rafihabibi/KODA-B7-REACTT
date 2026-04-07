@@ -18,6 +18,9 @@ function Header() {
           <NavLink to="/minitask3" className={({ isActive }) => isActive ? "text-yellow-400" : "hover:text-gray-300"}>
             Minitask3
           </NavLink>
+          <NavLink to="/minitask5" className={({ isActive }) => isActive ? "text-yellow-400" : "hover:text-gray-300"}>
+            Minitask5
+          </NavLink>
         </div>
       </div>
     </nav>
